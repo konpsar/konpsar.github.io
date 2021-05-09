@@ -1,11 +1,11 @@
 Konstantinos Psaroulakis:
   name        : "Konstantinos Psaroulakis"
   bio         : "Short bio"
-  avatar      : "/assets/images/kp.jpeg"
+  avatar      : "/assets/images/kp.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:psaroulakis.kon@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://users.ics.forth.gr/psar"
+      url: "https://users.ics.forth.gr/~psar"
