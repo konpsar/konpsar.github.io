@@ -8,7 +8,9 @@
 layout: home
 author_profile: true
 ---
-# *Welcome!*
+
+## *Welcome!*
+
 My name is Konstantinos Psaroulakis, and I am a ... .
 
 I can 
