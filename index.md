@@ -6,13 +6,15 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+title:  "Welcome!"
 author_profile: true
 ---
 
-## *Welcome!*
 
 My name is Konstantinos Psaroulakis, and I am a ... .
 
 I can 
 
 You can find out more about some of my past and current projects on my [portfolio]({{ "/portfolio" | relative_url }}).
+
+<br/><br/>
