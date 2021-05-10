@@ -1,9 +1,0 @@
-main:
-  - title: "About me"
-    url: /about/
-  - title: "Projects"
-    url: /projects/
-  - title: "Contact me"
-    url: /contact/
-  - title: "Personal Website"
-    url: https://users.ics.forth.gr/~psar
