@@ -248,6 +248,12 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
+  
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+    
 tag_archive:
   type: liquid
   path: /tags/

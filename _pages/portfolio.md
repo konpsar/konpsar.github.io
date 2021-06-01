@@ -1,9 +1,8 @@
 ---
-layout: single
-title: Contact
-permalink: /contact/
+title: Portfolio
+layout: collection
+permalink: /portfolio/
+collection: portfolio
+entries_layout: grid
+classes: wide
 ---
-
-### Contact me
-
-[psaroulakis.kon@gmail.com](mailto:psaroulakis.kon@gmail.com)
