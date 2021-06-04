@@ -24,7 +24,10 @@ The past years, supplementary to my main occupation, I have worked as a flute tu
 - Graduate Research assistant @ Signal Processing Laboratory of Foundation of Research and Technology (FORTH).
 - Flute Tutor @ "Concerto" Conservatory (Moires, Heraklion) 
 - Flute Tutor @ "Klassiko" Conservatory (Heraklion)
-	
+
+#### Background
+- Applied Mathematics (BSc)
+- Computer Science (MSc)	
 	
 Want to learn more about be? Please check [my online CV]({{"/_pages/cv_page/" | relative_url}}).
 You can also find some of my past and current projects either on my [github profile](https://github.com/konpsar/) or on my [portfolio]({{ "/portfolio" | relative_url }}) section on this page.
