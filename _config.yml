@@ -68,19 +68,20 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Personal Website"
-title_separator          : "-"
-subtitle                 : "Portfolio"
+title                    : "Konstantinos Psaroulakis | Portfolio"
+title_separator          : "|"
+#subtitle                 : "Portfolio"
 name                     : "Konstantinos Psaroulakis"
-description              : "Machine Learning Engineer"
+description              : "My personal portfolio website, including my online CV, blog-posts and programming projects."
 url                      : https://konpsar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : konpsar/konpsar.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+#head_scripts             :   
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/kp_logo_dark.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "KP Portfolio" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : " " #"KP Portfolio" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 160
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "custom"
   disqus:
@@ -110,27 +111,29 @@ algolia:
   powered_by             : true
 
 # SEO Related
-google_site_verification :
+google_site_verification : SrmEM0ZPDlSbV60Hz2CE4G9w67hn5QDDivqnL5MioG4
 bing_site_verification   :
 yandex_site_verification :
 
 # Site Author
 author:
-  name             : "KP"
+  name             : "Konstantinos Psaroulakis"
   avatar           : "/assets/images/kp.jpg"
-  bio              : "Short bio"
+  #bio              : "Short bio"
   location         : "GR"
   links:
-    - label: "My Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://users.ics.forth.gr/~psar"
+    #- label: "My Website"
+     # icon: "fas fa-fw fa-link"
+      #url: "https://users.ics.forth.gr/~psar"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/konpsar"
-    - label: "Youtube"
+    - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/channel/UCSk11jyzJvSrsr1vQfKNz3w"
-
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: https://www.linkedin.com/in/kpsaroulakis/
 
 # Social Sharing
 #facebook:
@@ -163,7 +166,9 @@ footer:
     - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/channel/UCSk11jyzJvSrsr1vQfKNz3w"
-
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: https://www.linkedin.com/in/kpsaroulakis/
 
 
 
@@ -210,7 +215,8 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+#permalink: /:categories/:title/
+permalink: /posts/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Athens # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
