@@ -1,6 +1,8 @@
 import React from 'react';
 import './SortingVisual.css';
 
+const total_numbers = 100
+
 export default class SortingVisual extends React.Component {
 	constructor(props){
 		super(props);
@@ -18,8 +20,8 @@ export default class SortingVisual extends React.Component {
 	/** Iterate and generate an array with 50 random numbers from 50 to 5000 **/
 	createArray() {
 		const array = [];
-		for (let i=0; i<50; i++) {
-			array.push(getRandomInt(50,5000));
+		for (let i=0; i<total_numbers; i++) {
+			array.push(getRandomInt(10,500));
 		}
 		this.setState({array});
 	}
@@ -33,8 +35,8 @@ export default class SortingVisual extends React.Component {
 		{array.map((value,idx) => (
 			<div className = "array-bar" 
 			key={idx}
-			style={{height: '${value}px',}}
-		>value</div>
+			style={{height: `${value}px`}}
+		>{value}</div>
 		))}
 		</div>
 		);
