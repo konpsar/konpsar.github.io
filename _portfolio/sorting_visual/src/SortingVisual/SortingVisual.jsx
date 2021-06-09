@@ -1,6 +1,6 @@
 import React from 'react';
 import './SortingVisual.css';
-
+/*import './SortingAlgorithms.js'*/
 const total_numbers = 100
 
 export default class SortingVisual extends React.Component {
@@ -26,7 +26,11 @@ export default class SortingVisual extends React.Component {
 		this.setState({array});
 	}
 
-    /** render array into array-bar class elements **/
+	selectionSort(){}
+	insertionSort(){}
+	mergeSort(){}
+
+	/** render array into array-bar class elements **/
 	render() {
 		const {array} = this.state;
 		
@@ -38,7 +42,14 @@ export default class SortingVisual extends React.Component {
 			style={{height: `${value}px`}}
 		>{value}</div>
 		))}
+
+		<button onClick= {() => this.createArray()}>Generate New Array </button>
+		<button onClick= {() => this.selectionSort()}>Selection Sort</button>
+		<button onClick= {() => this.insertionSort()}>Insertion Sort</button>
+		<button onClick= {() => this.mergeSort()}>Merge Sort</button>
+
 		</div>
+		
 		);
 	}		
 }	
