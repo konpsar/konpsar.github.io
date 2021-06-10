@@ -4,18 +4,18 @@ function swap(arr, i, j){
     arr[j] = temp;
     return arr;
 }
-function selectionSort(arr){
+export const selectionSort = arr =>{
     var N = arr.length;
-    var min_idx=0;
+    var min_idx;
     for (var i=0; i<N; i++){
-        min_idx=0;
+        min_idx=i;
         for (var j=i+1; j<N; j++){
             if (arr[j]<arr[min_idx]){
                 min_idx = j;
-            }
-        }
-    arr = swap(arr, i, minIdx);
-    }
+            }		
+		}
+		arr = swap(arr, i, min_idx);
+	}
     return arr;
 }
 

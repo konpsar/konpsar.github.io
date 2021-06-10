@@ -1,6 +1,6 @@
 import React from 'react';
 import './SortingVisual.css';
-/*import './SortingAlgorithms.js'*/
+import * as SortingAlgorithms from './SortingAlgorithms.js'
 const total_numbers = 100
 
 export default class SortingVisual extends React.Component {
@@ -26,7 +26,11 @@ export default class SortingVisual extends React.Component {
 		this.setState({array});
 	}
 
-	selectionSort(){}
+	selectionSort(){
+		const javascript_sorted = this.state.array.slice().sort((a,b)=>a-b);
+		const selection_sorted = SortingAlgorithms.selectionSort(this.state.array); 
+		console.log(equalArrays(javascript_sorted, selection_sorted));
+	}
 	insertionSort(){}
 	mergeSort(){}
 
@@ -54,6 +58,15 @@ export default class SortingVisual extends React.Component {
 	}		
 }	
 
+function equalArrays(array1, array2) { 
+	if (array1.length!== array2.length) return false; 
+	for (let i=0; i<array1.length;i++){ 
+		if (array1[i]!==array2[i]){
+			return false 
+		} 
+	} 
+	return true 
+}
 
 /** From https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
 **/
