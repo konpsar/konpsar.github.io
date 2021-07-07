@@ -13,7 +13,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 </head> 
  
 <body>
@@ -28,7 +27,16 @@
 <a class="navbar-KP" href="#"><img src="resources/my_KP.jpg"></a>
 <li role="presentation"><a class="nav-link in active" href="#about" aria-controls="overview" role="tab" data-toggle="tab">About me</a></li>
 <li role="presentation"><a class="nav-link" href="#studies" aria-controls="studies" role="tab" data-toggle="tab">Studies</a></li>
-<li role="presentation"><a class="nav-link" href="#music" aria-controls="music" role="tab" data-toggle="tab">Music</a></li>
+<!--<li role="presentation"><a class="nav-link" href="#music" aria-controls="music" role="tab" data-toggle="tab">Music</a></li> -->
+
+<li role="presentation">
+<a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" data-offset="0,0" href='#' id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Music</span> </a>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+<a class="dropdown-item" href="#music" role="tab" data-toggle="tab">Studies</a>
+<a class="dropdown-item" href="./demos.html">Demos</a>
+</div>
+
+
 <li role="presentation"><a class="nav-link"  href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
 <li role="presentation">
 <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" data-offset="10,20" href='#' id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--English-->EN <span class="flag-icon flag-icon-gb"> </span> </a>
@@ -59,7 +67,7 @@
 <div class="col-md-6 container">
 <!---- About ----->
 <section id="about">
-<h2>About Me</h2>
+<h2>Current role:</h2>
 <div class="about-content">
     
 <div class="col">
@@ -79,39 +87,54 @@ Computer Science Dpt (University of Crete)
 
 <div class="row">
 <div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
+<div><div id="army-image" class="edu_image"><img src="resources/army_logo.png" alt=""></div></div>
+<div class="edu_content">
+<div class="edu_title_container">
+<div class="edu_title"> Obligatory military service 
+</div>
+<div class="edu_subtitle">(July 2021 - April 2022) <br>@ 
+<a href="http://army.gr" class="about-link">
+Greek Army 
+</a></div></div></div></div>
+</div>
+</div>
+</div>
+
+</section>
+
+
+<!---- Previous Roles ----->
+<section id="prev-roles">
+<h2>Recent previous positions: </h2>
+<div class="prev-roles-content">
+    
+<div class="col">
+
+<div class="row">
+<div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
 <div><div class="edu_image forth-image"><img src="resources/forth.jpg" alt=""></div></div>
 <div class="edu_content">
 <div class="edu_title_container">
 <div class="edu_title">Software Engineer - ML Engineer
 </div>
-<div class="edu_subtitle">@ 
+<div class="edu_subtitle">(15 November 2020 - 30 June 2021) <br>@ 
 <a href="http://spl.edu.gr/" class="about-link">
 Signal Processing Lab (FORTH)
 </a></div></div></div></div>
 </div>
 
-<!-- <div class="row">
+
+<div class="row">
 <div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
 <div><div class="edu_image"><img src="resources/music.png" alt=""></div></div>
 <div class="edu_content">
 <div class="edu_title_container">
 <div class="edu_title">Flute Tutor</div>
-<div class="edu_subtitle">@
+<div class="edu_subtitle">(October 2019 - June 2020) <br>
+@ <a href="https://www.facebook.com/pages/category/Education/ΩΔΕΙΟ-Κονσέρτο-127287064674126/" class="about-link">"Concerto" Conservatory, Mires</a>  
 
-<div class="column">
-<a href="http://klassiko-odeio.gr/" class="about-link">Klassiko Odeio</a></div> -->
-
-<!-- 
-<div class="column"> 
-<a href="https://www.facebook.com/pages/category/Education/ΩΔΕΙΟ-Κονσέρτο-127287064674126/" class="about-link">"Concerto" Conservatory, Mires</a> 
+</div></div></div></div>
 </div> 
-
-<div class="column">
-<a href="http://www.pagkritio-odeio.gr/" class="about-link"> Pagkritio Odeio</a></div>
-
--->
-<!-- </div></div></div></div>
-</div> -->
 
 </div>
 
@@ -121,7 +144,8 @@ Signal Processing Lab (FORTH)
 -->
 </section>
 
-</div> <!--end row-->
+
+</div>     
 </div>     
 </div> <!--end overview tab-pane-->
 

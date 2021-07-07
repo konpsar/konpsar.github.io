@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-My name is Konstantinos Psaroulakis, and I am on a 9-month leave to fulfil my obligatory military service for Greek Army. Up to June 2021, I had a Software Engineer and ML Engineer role @ Signal Processing Laboratory of Foundation of Research and Technology (FORTH). 
-My responsibilities were:
 
- - The research and the of a wildlife audio event detection system, to detect both human or animal activities on real field audio recordings. (Relevant languages/frameworks/libs: Python, TensorFlow, scikit-learn, librosa, numpy, matplotlib, pandas, seaborn)
-- The development of a command line interface and a graphical user interface of open source tools for chainsaw and cough detection. (Relevant languages/frameworks/libs: Python, TensorFlow, scikit-learn, librosa, numpy, matplotlib, pandas, seaborn, tkinter, PyQt5)
-- The maintenance of a server running a Restful web service for cough detection, built with Java/MongoDB. (Relevant languages/frameworks/libs: Java, Docker, MongoDB, Tomcat, Unix)
+My name is Konstantinos Psaroulakis, and I am a Software Engineer and ML Engineer @ Signal Processing Laboratory of Foundation of Research and Technology (FORTH). 
+
+My current role focuses on the research of a wildlife audio surveillance system, to detect both human or animal activities on real field audio recordings. (Relevant languages/frameworks/libs that I currently use: Python, TensorFlow, scikit-learn, librosa, numpy, matplotlib, pandas, tkinter, PyQt)
 
 #### Personality 
 
@@ -23,7 +21,6 @@ The past years, supplementary to my main occupation, I have worked as a flute tu
 
 #### Previous Roles 
 
-- Software Engineer (and ML Engineer) @ Signal Processing Laboratory of Foundation of Research and Technology (FORTH). 
 - Graduate Research assistant @ Signal Processing Laboratory of Foundation of Research and Technology (FORTH).
 - Flute Tutor @ "Concerto" Conservatory (Moires, Heraklion) 
 - Flute Tutor @ "Klassiko" Conservatory (Heraklion)
