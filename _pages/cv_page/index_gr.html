@@ -12,8 +12,7 @@
 <link rel="stylesheet" href="style2.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
 </head>  
 <body>
 
@@ -27,7 +26,11 @@
 <a class="navbar-KP" href="#"><img src="resources/my_KP.jpg"></a>
 <li role="presentation" class><a class="nav-link in active" href="#about" aria-controls="overview" role="tab" data-toggle="tab">Γενικά</a></li>
 <li role="presentation"><a class="nav-link" href="#studies" aria-controls="studies" role="tab" data-toggle="tab">Σπουδές</a></li>
-<li role="presentation"><a class="nav-link" href="#music" aria-controls="music" role="tab" data-toggle="tab">Μουσική</a></li>
+<li role="presentation"><a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" data-offset="0,0" href='#' id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Μουσική</span> </a>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+<a class="dropdown-item" href="#music" role="tab" data-toggle="tab">Σπουδές</a>
+<a class="dropdown-item" href="./demos.html">Demos</a>
+</div>
 <li role="presentation"><a class="nav-link" id="contact-tab"  href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Επικοινωνία</a></li>
 <li role="presentation"><a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--Ελληνικά (Greek)-->ΕΛ <span class="flag-icon flag-icon-gr"> </span> </a>
 <div class="dropdown-menu" aria-labelledby="dropdown09">
@@ -46,16 +49,68 @@
 <div class="row">
 <!-- <img src="resources/name_gr.jpg" class="d-block w-50 avatar" alt="Κωνσταντίνος Ψαρουλάκης">  -->
 <img src="resources/name_gr.jpg" class="name-handwritten" alt="Κωνσταντίνος Ψαρουλάκης">
-</div></div>
+</div>
+
+<br><br><br>
+<div class="d-flex justify-content-center">
+<a href="http://konpsar.github.io" class="btn btn-secondary btn-sm" role="button" aria-disabled="true">Προσωπική Ιστοσελίδα / Portfolio</a>
+</div>
+<div class="d-flex justify-content-center">
+(Προς το παρόν υπάρχει μόνο αγγλική έκδοση)
+</div>
+
+
+	
+	
+</div>
 
 <div class="col-md-6 container">
 <!---- About ----->
 <section id="about">
-<h2>Γενικά</h2>
-<div class="about-content">    
+
+
+<h2>Τρέχων ρόλος:</h2>
+<div class="about-content">
+    
 <div class="col">
 <!-- Education Item -->
+<!-- <div class="row">
+<div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
+<div><div class="edu_image"><img src="resources/uoc_logo.jpg" alt=""></div></div>
+<div class="edu_content">
+<div class="edu_title_container">
+<div class="edu_title">MSc student</div>
+<div class="edu_subtitle">@ 
+<a href="https://www.csd.uoc.gr/" class="about-link">
+Computer Science Dpt (University of Crete)
+</a></div></div></div></div>
+</div> -->
 
+
+<div class="row">
+<div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
+<div><div id="army-image" class="edu_image"><img src="resources/army_logo.png" alt=""></div></div>
+<div class="edu_content">
+<div class="edu_title_container">
+<div class="edu_title"> Στρατιωτική Θητεία 
+</div>
+<div class="edu_subtitle">(Ιούλιος 2021 - Απρίλιος 2022) <br>@ 
+<a href="http://army.gr" class="about-link">
+Ελληνικός Στρατός 
+</a></div></div></div></div>
+</div>
+</div>
+</div>
+
+</section>
+
+
+<!---- Previous Roles ----->
+<section id="prev-roles">
+<h2>Πρόσφατοι προηγούμενοι ρόλοι : </h2>
+<div class="prev-roles-content">
+    
+<div class="col">
 
 <div class="row">
 <div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
@@ -63,42 +118,34 @@
 <div class="edu_content">
 <div class="edu_title_container">
 <div class="edu_title">Μηχανικός Λογισμικού
-<!-- <a href="http://spl.edu.gr/index.php/konstantinos-psaroulakis/" class="about-link">
-(link)</a> -->
 </div>
-<div class="edu_subtitle">@ 
+<div class="edu_subtitle">(15 Νοεμβρίου 2020 - 30 Ιουνίου 2021) <br>@ 
 <a href="http://spl.edu.gr/" class="about-link">
-Εργαστήριο Επεξεργασίας Σήματος <br>Signal Processing Lab (FORTH)</a></div>
-</div></div></div></div>
+Εργαστήριο Επεξεργασίας Σήματος <br>Signal Processing Lab (FORTH)
+</a></div></div></div></div>
+</div>
 
-<!-- <div class="row">
+
+<div class="row">
 <div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
 <div><div class="edu_image"><img src="resources/music.png" alt=""></div></div>
 <div class="edu_content">
 <div class="edu_title_container">
 <div class="edu_title">Δάσκαλος Φλάουτου</div>
-<div class="edu_subtitle">@ -->
+<div class="edu_subtitle">(Οκτώβριος 2019 - Ιούνιος 2020) <br>
+@ <a href="https://www.facebook.com/pages/category/Education/ΩΔΕΙΟ-Κονσέρτο-127287064674126/" class="about-link">Ωδείο Κονσέρτο, Μοίρες</a> 
 
-<!-- <div class="column">
-<a href="http://klassiko-odeio.gr/" class="about-link">Κλασσικό Ωδείο</a>
-</div> -->
+</div></div></div></div>
+</div> 
 
-<!--
-<div class="column">
-<a href="http://www.pagkritio-odeio.gr/" class="about-link"> Παγκρήτιο Ωδείο</a> </div>
-
-<div class="column">
-<a href="https://www.facebook.com/pages/category/Education/ΩΔΕΙΟ-Κονσέρτο-127287064674126/" class="about-link">Ωδείο Κονσέρτο, Μοίρες</a> 
 </div>
--->
-<!-- </div> -->
-<!-- </div></div></div></div>
-</div></div> -->
 
-<!-- 
-<button type="button" class="btn btn-primary pull-right">Σύντομο Βιογραφικό</button>
+</div>
+<!--
+<button type="button" class="btn btn-primary pull-right">Short CV</button>
 -->
 </section>
+
 </div> <!--end row--> 
 </div></div> <!--end overview tab-pane-->
 
@@ -115,7 +162,18 @@
 <!-- <img src="resources/name_gr.jpg" class="d-block w-50 avatar" alt="Κωνσταντίνος Ψαρουλάκης">  -->
 <img src="resources/name_gr.jpg" class="name-handwritten" alt="Κωνσταντίνος Ψαρουλάκης">
 
-</div></div>
+</div>
+
+<br><br><br>
+<div class="d-flex justify-content-center">
+<a href="http://konpsar.github.io" class="btn btn-secondary btn-xs" role="button" aria-disabled="true">Προσωπική Ιστοσελίδα / Portfolio</a>
+</div>
+<div class="d-flex justify-content-center">
+(Προς το παρόν υπάρχει μόνο αγγλική έκδοση)
+</div>
+
+
+</div>
 <div class="col-md-8 container">
 <section id="studies-content" class="scrollable">
 
@@ -230,16 +288,25 @@
 <!-- <img src="resources/name_gr.jpg" class="d-block w-50 avatar" alt="Κωνσταντίνος Ψαρουλάκης">  -->
 <img src="resources/name_gr.jpg" class="name-handwritten" alt="Κωνσταντίνος Ψαρουλάκης">
   
-</div></div></div>
+</div>
+</div>
+
+<br><br><br>
+<div class="d-flex justify-content-center">
+<a href="http://konpsar.github.io" class="btn btn-secondary btn-xs" role="button" aria-disabled="true">Προσωπική Ιστοσελίδα / Portfolio</a>
+</div>
+<div class="d-flex justify-content-center">
+(Προς το παρόν υπάρχει μόνο αγγλική έκδοση)
+</div>
+
+
+</div>
+
 
 <div class="col-md-8 container">
 <section id="music-content" class="scrollable">
 <h2>Μουσική</h2>
 	
-<h3>Demo</h3>	
-<a href="./demos_gr.html" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Πατήστε για να δείτε τα Demo</a>
-
-
 <h3>Εκπαίδευση</h3>	
 <!-- Education Item -->
 <div class="edu_item d-flex flex-lg-row flex-column align-items-start justfy-content-start">
@@ -315,8 +382,24 @@ B.Beutter (5 χρόνια μαθήματα φλάουτου+ 3 χρόνια μα
 <!--Email-->
 <button type="button" class="btn btn-secondary">
 <a href="mailto:psaroulakis.kon@gmail.com" class="button social" ><img src="resources/mail.png"></a>
-</button></div></div></div></div></div> <!--end overview tab-pane-->
+</button></div>
+<br><br><br>
+<div class="d-flex justify-content-left">
+<a href="http://konpsar.github.io" class="btn btn-secondary btn-lg" role="button" aria-disabled="true">Προσωπική Ιστοσελίδα / Portfolio</a>
+</div>
+<div class="d-flex justify-content-left">
+(Προς το παρόν υπάρχει μόνο αγγλική έκδοση)
+</div>
+
+
+</div>
+
+</div></div></div> <!--end overview tab-pane-->
 </div></div></div><!-- end of content-wrap -->
+
+
+
+
 
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-1">
