@@ -1,7 +1,18 @@
 import React from 'react';
 import './SortingVisual.css';
-import * as SortingAlgorithms from './SortingAlgorithms.js'
+import {getSelectionAnimations} from './SortingAlgorithms';
+
 const total_numbers = 100
+
+const PRIMARY_COLOR = "blue";
+const SECONDARY_COLOR = "red";
+const END_COLOR = "green";
+
+const MIN_COLOR = "yellow";
+const Jcol = "red";
+const WALL = "black";
+const OK = "green";
+const ANIMATION_SPEED_MS = 5;
 
 export default class SortingVisual extends React.Component {
 	constructor(props){
@@ -26,13 +37,52 @@ export default class SortingVisual extends React.Component {
 		this.setState({array});
 	}
 
-	selectionSort(){
-		const javascript_sorted = this.state.array.slice().sort((a,b)=>a-b);
-		const selection_sorted = SortingAlgorithms.selectionSort(this.state.array); 
-		console.log(equalArrays(javascript_sorted, selection_sorted));
-	}
-	insertionSort(){}
-	mergeSort(){}
+
+
+    selectionSort() {
+        const javaScriptSort = this.state.array.slice().sort((a, b) => a - b);
+		const [sortedArray, animations] = getSelectionAnimations(this.state.array);
+		console.log("Correct sorting? ",equalArrays(sortedArray, javaScriptSort));	  
+		const arrayBars = document.getElementsByClassName('array-bar');
+        for (let i = 0; i < animations.length; i++) {
+            // const isColorChange = (animations[i][0] === "comparision1") || (animations[i][0] === "comparision2");
+            const isColorChange = (animations[i][0] === "comp") || (animations[i][0] === "comp_reset") ;
+            if(isColorChange === true) {
+                const color = (animations[i][0] === "comp") ? SECONDARY_COLOR : PRIMARY_COLOR;
+                const min_color = (animations[i][0] === "comp") ? MIN_COLOR : PRIMARY_COLOR;
+				const [, comparisonIndex, minIndex] = animations[i];
+                const comparisonStyle = arrayBars[comparisonIndex].style;
+                const minIndexStyle = arrayBars[minIndex].style;
+                // if (curMinIdx !== minIndex){
+				// 	setTimeout(() => {
+				// 		arrayBars[curMinIdx].style.backgroundColor = PRIMARY_COLOR;
+				// 		curMinIdx = minIndex;
+				// 		arrayBars[curMinIdx].style.backgroundColor = MIN_COLOR;
+				// 	},i * ANIMATION_SPEED_MS);					
+				
+				setTimeout(() => {
+                    minIndexStyle.backgroundColor = min_color;
+                    comparisonStyle.backgroundColor = color;
+                },i * ANIMATION_SPEED_MS);				
+				// setTimeout(() => {
+                //     minIndexStyle.backgroundColor = PRIMARY_COLOR;
+				// 	comparisonStyle.backgroundColor = PRIMARY_COLOR;
+                // },i * ANIMATION_SPEED_MS);				
+			}
+
+			else { // if animation[i][0] === "swap"
+                const [, barIndex, newHeight, color_change] = animations[i];
+                const barStyle = arrayBars[barIndex].style;
+				setTimeout(() => {
+                    barStyle.height = `${newHeight}px`;
+					if (color_change) {barStyle.backgroundColor = END_COLOR;}
+					// if (color_change && barIndex>0){arrayBars[barIndex-1].style.backgroundColor = PRIMARY_COLOR;}
+                },i* ANIMATION_SPEED_MS);  
+            }
+        }
+        this.setState({array: sortedArray})
+    }
+	
 
 	/** render array into array-bar class elements **/
 	render() {
@@ -49,8 +99,8 @@ export default class SortingVisual extends React.Component {
 
 		<button onClick= {() => this.createArray()}>Generate New Array </button>
 		<button onClick= {() => this.selectionSort()}>Selection Sort</button>
-		<button onClick= {() => this.insertionSort()}>Insertion Sort</button>
-		<button onClick= {() => this.mergeSort()}>Merge Sort</button>
+		{/* <button onClick= {() => this.insertionSort()}>Insertion Sort</button> */}
+		{/* <button onClick= {() => this.mergeSort()}>Merge Sort</button> */}
 
 		</div>
 		

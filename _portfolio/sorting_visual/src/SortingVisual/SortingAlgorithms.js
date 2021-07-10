@@ -1,23 +1,36 @@
-function swap(arr, i, j){
+export function swap(arr, i, j){
     var temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
-    return arr;
 }
-export const selectionSort = arr =>{
-    var N = arr.length;
-    var min_idx;
-    for (var i=0; i<N; i++){
-        min_idx=i;
-        for (var j=i+1; j<N; j++){
-            if (arr[j]<arr[min_idx]){
-                min_idx = j;
-            }		
-		}
-		arr = swap(arr, i, min_idx);
-	}
-    return arr;
+
+export function getSelectionAnimations(arr) {
+  const animations = [];
+
+  if (arr.length <= 1) return [arr, animations];
+  selectionSort(arr, animations);
+
+  return [arr, animations];
 }
+
+function selectionSort(arr, animations) {
+    const N = arr.length;
+    for (let i = 0; i < N - 1; i++) {
+        let minIndex = i; 
+        for (let j = i + 1; j < N; j++) {
+            animations.push(["comp", j, minIndex]);
+            animations.push(["comp_reset", j, minIndex]);
+            if (arr[j] < arr[minIndex]) {
+                // animations.push(["setMin", minIndex, j]); // prevMinIndex, minIndex
+                minIndex = j;
+            }
+        }
+        animations.push(["swap", minIndex, arr[i], false]);
+        animations.push(["swap", i, arr[minIndex], true]);
+        swap(arr, minIndex, i);
+    }
+}
+
 
 function insertionSort(){
     return 0;
