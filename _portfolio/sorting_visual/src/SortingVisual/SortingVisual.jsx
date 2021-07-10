@@ -2,7 +2,7 @@ import React from 'react';
 import './SortingVisual.css';
 import {getSelectionAnimations} from './SortingAlgorithms';
 
-const total_numbers = 100
+const total_numbers = 80
 
 const PRIMARY_COLOR = "blue";
 const SECONDARY_COLOR = "red";
@@ -12,7 +12,7 @@ const MIN_COLOR = "yellow";
 const Jcol = "red";
 const WALL = "black";
 const OK = "green";
-const ANIMATION_SPEED_MS = 5;
+const ANIMATION_SPEED_MS = 1;
 
 export default class SortingVisual extends React.Component {
 	constructor(props){
@@ -35,6 +35,7 @@ export default class SortingVisual extends React.Component {
 			array.push(getRandomInt(10,500));
 		}
 		this.setState({array});
+		// this.render()
 	}
 
 
@@ -81,8 +82,16 @@ export default class SortingVisual extends React.Component {
                 },i* ANIMATION_SPEED_MS);  
             }
         }
-        this.setState({array: sortedArray})
+		setTimeout(() => {
+			{arrayBars[arrayBars.length-1].style.backgroundColor = END_COLOR;}
+		},animations.length* ANIMATION_SPEED_MS);  
+
+        // this.setState({array: sortedArray})
 		// this.restoreButtons();
+		setTimeout(() => {
+			for (let i=0; i<arrayBars.length; i++){arrayBars[i].style.backgroundColor = PRIMARY_COLOR; } 
+		},animations.length * ANIMATION_SPEED_MS+1000);  
+		
     }
 	
 
