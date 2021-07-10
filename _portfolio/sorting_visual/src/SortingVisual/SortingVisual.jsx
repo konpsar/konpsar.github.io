@@ -38,8 +38,9 @@ export default class SortingVisual extends React.Component {
 	}
 
 
-
+	
     selectionSort() {
+		// this.disableButtons();
         const javaScriptSort = this.state.array.slice().sort((a, b) => a - b);
 		const [sortedArray, animations] = getSelectionAnimations(this.state.array);
 		console.log("Correct sorting? ",equalArrays(sortedArray, javaScriptSort));	  
@@ -81,8 +82,33 @@ export default class SortingVisual extends React.Component {
             }
         }
         this.setState({array: sortedArray})
+		// this.restoreButtons();
     }
 	
+
+	// disableButtons() {
+	// 	document.getElementById("selectionSort").disabled = true;
+	// 	let buttonStyle = document.getElementById("selectionSort").style;
+	// 	buttonStyle.cursor = "default";
+	// 	buttonStyle.background = "#000000";
+	
+	// 	document.getElementById("newArray").disabled = true;
+	// 	buttonStyle = document.getElementById("newArray").style;
+	// 	buttonStyle.cursor = "default";
+	// 	buttonStyle.background = "#000000";
+	// }
+	
+	// restoreButtons() {
+	// 	document.getElementById("selectionSort").disabled = false;
+	// 	let buttonStyle = document.getElementById("selectionSort").style;
+	// 	buttonStyle.background = "#47535E";
+	// 	buttonStyle.cursor = "pointer";
+	
+	// 	document.getElementById("newArray").disabled = false;
+	// 	buttonStyle = document.getElementById("newArray").style;
+	// 	buttonStyle.background = "#47535E";
+	// 	buttonStyle.cursor = "pointer";
+	// }
 
 	/** render array into array-bar class elements **/
 	render() {
@@ -97,8 +123,8 @@ export default class SortingVisual extends React.Component {
 		>{value}</div>
 		))}
 
-		<button onClick= {() => this.createArray()}>Generate New Array </button>
-		<button onClick= {() => this.selectionSort()}>Selection Sort</button>
+		<button id = "newArray" onClick= {() => this.createArray()}>Generate New Array</button>
+		<button id = "selectionSort" onClick= {() => this.selectionSort()}>Selection Sort</button>
 		{/* <button onClick= {() => this.insertionSort()}>Insertion Sort</button> */}
 		{/* <button onClick= {() => this.mergeSort()}>Merge Sort</button> */}
 
