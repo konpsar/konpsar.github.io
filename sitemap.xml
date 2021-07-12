@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://konpsar.github.io/</loc>
+  <lastmod>2021-06-08T04:50:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/about/</loc>
+  <lastmod>2021-06-08T04:50:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/portfolio/</loc>
+  <lastmod>2021-06-08T04:50:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/contact/</loc>
+  <lastmod>2021-06-08T04:50:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/_pages/cv_page/</loc>
+  <lastmod>2021-06-08T04:49:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/posts/Rule_of_72/</loc>
+  <lastmod>2021-06-08T04:50:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/posts/test/</loc>
+  <lastmod>2021-06-08T04:50:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/_pages/cv_page/demos.html</loc>
+  <lastmod>2021-06-08T04:49:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/portfolio/test_project/</loc>
+  <lastmod>2021-06-08T04:50:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/_pages/cv_page/index_gr.html</loc>
+  <lastmod>2021-06-08T04:49:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/_pages/cv_page/index.html</loc>
+  <lastmod>2021-06-08T04:49:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://konpsar.github.io/_pages/cv_page/demos_gr.html</loc>
+  <lastmod>2021-06-08T04:49:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
