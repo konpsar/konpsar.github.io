@@ -1,9 +1,0 @@
-main:
-  - title: "About me"
-    url: /about/
-  - title: "Portfolio"
-    url: /portfolio/
-  - title: "Contact me"
-    url: /contact/
-  - title: "Online CV"
-    url: /_pages/cv_page
