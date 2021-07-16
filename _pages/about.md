@@ -41,6 +41,8 @@ If you need a full CV in pdf form, please send me and email by clicking the link
 
 [Request CV](mailto:psaroulakis.kon@gmail.com?subject=Request%20of%20a%20full%20CV)
 
+(If this link doesn't work out for you, just send me an email on psaroulakis.kon@gmail.com with subject "Request of a full CV". In case you don't get a response, check also the junk folder.)
+
 ### Contact me
 
 Feel free to contact me. Please refer to [Contact me](/contact/) section to find ways to reach me.
