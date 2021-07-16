@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-My name is Konstantinos Psaroulakis, and I am on a 9-month leave to fulfil my obligatory military service for Greek Army. Up to June 2021, I had a Software Engineer and ML Engineer role @ Signal Processing Laboratory of Foundation of Research and Technology (FORTH). 
+My name is Konstantinos Psaroulakis, and I am on a 9-month leave to fulfil my mandatory military service for Greek Army. Up to June 2021, I had a Software Engineer and ML Engineer role @ Signal Processing Laboratory of Foundation of Research and Technology (FORTH). 
 My responsibilities were:
 
- - The research and the of a wildlife audio event detection system, to detect both human or animal activities on real field audio recordings. (Relevant languages/frameworks/libs: Python, TensorFlow, scikit-learn, librosa, numpy, matplotlib, pandas, seaborn)
+ - The research and the development of a wildlife audio event detection system, to detect both human or animal activities on real field audio recordings. (Relevant languages/frameworks/libs: Python, TensorFlow, scikit-learn, librosa, numpy, matplotlib, pandas, seaborn)
 - The development of a command line interface and a graphical user interface of open source tools for chainsaw and cough detection. (Relevant languages/frameworks/libs: Python, TensorFlow, scikit-learn, librosa, numpy, matplotlib, pandas, seaborn, tkinter, PyQt5)
 - The maintenance of a server running a Restful web service for cough detection, built with Java/MongoDB. (Relevant languages/frameworks/libs: Java, Docker, MongoDB, Tomcat, Unix)
 
@@ -34,6 +34,12 @@ The past years, supplementary to my main occupation, I have worked as a flute tu
 
 Want to learn more about be? Please check [my online CV]({{"/_pages/cv_page/" | relative_url}}).
 You can also find some of my past and current projects either on my [github profile](https://github.com/konpsar/) or on my [portfolio]({{ "/portfolio" | relative_url }}) section on this page.
+
+#### Curriculum Vitae
+
+If you need a full CV in pdf form, please send me and email by clicking the link below (Without changing the subject).
+
+[Request CV](mailto:psaroulakis.kon@gmail.com?subject=Request%20of%20a%20full%20CV)
 
 ### Contact me
 
