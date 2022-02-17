@@ -40,9 +40,10 @@ You can also find some of my past and current projects either on my [github prof
 If you need a full CV in pdf form or an one-page Resume, please send me and email by clicking the link below (Without changing the subject).
 
 [Request CV](mailto:psaroulakis.kon@gmail.com?subject=Request%20of%20a%20full%20CV)
-[Request one-page Resume](mailto:psaroulakis.kon@gmail.com?subject=Request%20of%20a%20one-page%20Resume)
 
-(If this link doesn't work out for you, just send me an email on psaroulakis.kon@gmail.com with subject "Request of a full CV". In case you don't get a response, check also the junk folder.)
+[Request one-page Resume](mailto:psaroulakis.kon@gmail.com?subject=Request%20of%20an%20one-page%20Resume)
+
+(If these links don't work out for you, just send me an email on psaroulakis.kon@gmail.com with subject "Request of a full CV" or "Request of an one-page Resume" accordingly. In case you don't get a response, check also the junk folder.)
 
 ### Contact me
 
