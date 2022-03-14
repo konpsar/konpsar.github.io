@@ -18,7 +18,7 @@ My responsibilities were:
 - The maintenance of a server running a Restful web service for cough detection, built with Java/MongoDB. (Relevant languages/frameworks/libs: Java, Docker, MongoDB, Tomcat, Unix)
 
 I am a curiosity-driven fast-learner who always tries to keep updated and learn new concepts about artificial intelligence, software development, finance, investing and psychology.
-<> ( blockchain, algorithmic trading)
+
 
 Music is a parallel path I had always been following alongside with my main career. I play the flute and have worked as a flute tutor at conservatories (and occasionally I play the guitar and sing).
 
